@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700&family=Playfair+Display:wght@600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #171313;
+  background: #fff9f8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-rose {
+  --tw-text-opacity: 1;
+  color: rgb(255 123 164 / var(--tw-text-opacity, 1));
+}
+
+.bg-rose {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 123 164 / var(--tw-bg-opacity, 1));
+}
+
+.border-rose {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 123 164 / var(--tw-border-opacity, 1));
+}
+
+.ring-rose {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(255 123 164 / var(--tw-ring-opacity, 1));
+}
+
+.ig-reel-card .instagram-media,
+.ig-reel-card iframe {
+  max-width: 100% !important;
+  min-width: 0 !important;
+  width: 100% !important;
+}
+
+.ig-reel-card iframe {
+  display: block !important;
+  margin: 0 !important;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+button,
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.object-left {
+  object-position: center;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.not-sr-only {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
